@@ -1,0 +1,515 @@
+/*
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+## Icons
+
+For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
+
+/*
+========================================================================
+                                Header CSS
+========================================================================
+*/
+
+.containerHeader {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 130px 375px 0 ;
+}
+
+.innerHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.innerHeader img{
+    height: 125px;
+    width: 125px;
+}
+
+.innerHeader h1 {
+    color: hsl(210, 10%, 33%);
+    padding-top: 79px;
+}
+
+.innerHeader p {
+    color:hsl(201, 11%, 66%);
+    padding-top: 40px;
+}
+
+.headerButtons {
+    padding-top: 56px;
+}
+
+.headerButtons button {
+    border: none;
+    border-radius: 35px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 26px 38px 21px 37px;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 16px;
+}
+
+.headerButtons button:hover {
+    opacity: 0.8;
+}
+
+#buttonIos, #buttonIosHaut {
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 3px solid #239f87;
+    margin: 0 8px;
+}
+
+#buttonMac, #buttonMachaut {
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 3px solid #4f64e1;
+    margin: 0 8px;
+}
+
+/*
+========================================================================
+                                Track CSS
+========================================================================
+*/
+
+.containerTrack {
+    text-align: center;
+}
+
+.innerContainerTrack {
+    padding: 168px 375px 88px;
+}
+.innerContainerTrack h2 {
+    color: hsl(210, 10%, 33%);
+}
+
+.innerContainerTrack p {
+    color:hsl(201, 11%, 66%);
+    margin-top: 41px;
+}
+
+.separation {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin-right: 240px;
+}
+
+.separation img{
+    height: auto;
+    max-width: 100%;
+}
+
+.separation .right {
+    margin-left: 111px;
+}
+
+
+.separation h3{
+    color: hsl(210, 10%, 33%);
+
+}
+
+.separation p{
+    color:hsl(201, 11%, 66%);
+    margin-top: 27px;
+}
+
+.separation .right .bas {
+    margin-top: 72px;
+}
+
+/*
+========================================================================
+                                Access CSS
+========================================================================
+*/
+
+.containerAccess {
+    margin: 0 316px;
+}
+
+.innerAccess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.innerAccess h2{
+    color: hsl(210, 10%, 33%);
+    margin-top: 168px;
+}
+
+.innerAccess p {
+    color:hsl(201, 11%, 66%);
+	margin: 41px 59px 120px;
+}
+
+/*
+========================================================================
+                                Surcharge CSS
+========================================================================
+*/
+
+.surchargeHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 80px 375px 84px;
+}
+
+.surchargeHeader h2{
+    color: hsl(210, 10%, 33%);
+}
+
+.surchargeHeader p{
+    color:hsl(201, 11%, 66%);
+    margin-top: 42px;
+}
+
+.surchargeService {
+    display: flex;
+    align-items: center;
+    margin: 0 167px 0 175px;
+}
+
+.surchargeService .service{
+    text-align: center;
+    max-width: 350px;
+}
+
+.service h3 {
+    color: hsl(210, 10%, 33%);
+    margin-top: 52px;
+}
+
+.service p {
+    color:hsl(201, 11%, 66%);
+    margin-top: 15px;
+    padding: 20px;
+}
+
+#icon1 {
+    height: 40px;
+    width: 43px;
+}
+
+#icon2 {
+    height: 32px;
+    width: 35px;
+}
+
+#icon3 {
+    height: 32px;
+    width: 50px;
+}
+
+.surchargePartner {
+    margin: 170px 165px 180px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+/*
+========================================================================
+                                Clipboard CSS
+========================================================================
+*/
+
+
+.containerClipboard {
+    margin: 0 375px 0 ;
+}
+
+.innerClipboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.innerClipboard h2 {
+    color: hsl(210, 10%, 33%);
+
+}
+
+.innerClipboard p {
+    color:hsl(201, 11%, 66%);
+    margin-top: 41px;
+}
+
+/*
+========================================================================
+                                Footer CSS
+========================================================================
+*/
+
+.containerFooter {
+    background-color:#f5f6f8;
+    height: 150px;
+    margin-top: 150px;
+    padding: 0 165px;
+}
+.innerFooter {
+	display: flex;
+	align-items: center;
+	height: 150px;
+	justify-content: space-between;
+}
+
+.innerFooter .left {
+    display: flex;
+}
+
+.innerFooter .left img {
+    height: 55px;
+    width: 55px;
+}
+
+.innerFooter .left a {
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0 99px 0 136px;
+}
+
+.contact a:nth-child(2), .privacy a:nth-child(2){
+    margin-top: 10px;
+}
+
+.privacy {
+    display: flex;
+    flex-direction: column;
+    margin-right: 74px;
+}
+
+.innerFooter .left a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.icons a:nth-child(2){
+    margin: 0 25px;
+}
+
+/* XL layout */
+@media screen and (max-width: 1200px) {
+    .separation {
+        flex-direction: column ;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .separation .right {
+        margin: 0;
+        margin-top: 150px;
+
+    }
+}
+
+/*Background image for mobile Layout only*/
+@media screen and (min-width: 300px) and (max-width:375px){
+    .containerHeader {
+        background-image: url(images/bg-header-mobile.png);
+    }
+    #buttonMac, #buttonMachaut {
+        margin: 0;
+    }
+}
+
+
+/* Mobile to Tablet LAYOUT*/
+@media screen and (min-width: 300px) and (max-width:1300px) {
+    body {
+        font-size: 16px;
+    }
+    .containerHeader {
+        
+        padding: 122px 30px 0;
+    }
+
+    .containterHeader h1 {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .headerButtons button {
+        padding: 25px 80px 21px 80px;
+    }
+
+    #buttonIos, #buttonMac, #buttonIosHaut, #buttonMacHaut {
+        margin: 12px 0;
+    }    
+
+    .innerContainerTrack {
+        padding:0;
+        padding: 174px 30px 72px;
+    }
+
+    .separation img {
+        max-width: 84%;
+    }
+
+    .separation .right {
+        margin-top: 63px;
+        padding: 0 30px 0;
+
+    }
+
+    .containerAccess {
+        margin: 0;
+        padding: 0 30px 0;
+    }
+
+    .innerAccess p {
+        margin: 33px 0 70px;
+    }
+
+    .surchargeHeader {
+        margin: 0;
+        padding: 115px 64px 0;
+        text-align: center;
+    }
+
+    .surchargeHeader p {
+        margin: 29px 0 97px;
+    }
+
+    .surchargeService {
+        display: block;
+        margin: 0;
+        padding: 0 30px 0;
+
+    }
+
+    .surchargeService .service {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .service p {
+        margin-top: 36px;
+        padding: 0;
+        margin-bottom: 148px;
+    }
+    
+    .surchargePartner {
+        display: block;
+        margin: 0;
+        padding: 0 30px;
+    }
+
+    .partner {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 50px;
+    }
+
+    .containerClipboard {
+        margin: 0;
+        padding: 0 30px;
+    }
+
+    .innerClipboard h2 {
+        margin: 134px 52px 34px;
+    }
+
+    .innerClipboard p {
+        margin-top: 0;
+    }
+
+    .containerFooter {
+        height: 76vh;
+        margin-top: 171px;
+        padding: 0;
+    }
+    .innerFooter .left img {
+        margin: 52px auto 49px;
+    }
+
+    .innerFooter {
+        display: block;
+    }
+
+    .innerFooter .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact, .privacy {
+        margin: 0;
+        align-items: center;
+    }
+
+    .contact a:nth-child(2), .privacy a:nth-child(2) {
+        margin: 41px auto 41px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 56px;
+    }
+}
